@@ -3,106 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padaria em Londrina</title>
+    <title>Cardápio — Padaria Pão &amp; Cia</title>
+    <!-- Mesma folha de estilo do index.html: a página já nasce estilizada -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO: identidade + menu de navegação -->
+    <!-- CABEÇALHO: igual ao do index, com o menu ligando as páginas -->
     <header class="cabecalho">
         <h1>Padaria Pão &amp; Cia</h1>
         <p class="subtitulo">A melhor padaria de Londrina</p>
         <nav class="menu">
-            <a href="#destaques">Destaques</a>
-            <a href="cardapio.html
-            <a href="#contato">Contato</a>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="index.html#contato">Contato</a>
         </nav>
     </header>
 
     <main>
 
-        <!-- APRESENTAÇÃO: tags de autoria (blockquote, cite, strong, em) -->
         <section class="intro">
-            <blockquote>
-                <p>"Feito com fermento natural e muito carinho, todos os dias."</p>
-                <cite>— Equipe da Padaria Pão &amp; Cia</cite>
-            </blockquote>
-            <p>Somos uma padaria artesanal em <strong>Londrina</strong>. Aqui você encontra
-               <em>doces, bolos, salgados e sobremesas</em> feitos na hora.</p>
+            <h2>Nosso cardápio</h2>
+            <p>Tudo feito na hora, com ingredientes selecionados. Preços por unidade.</p>
         </section>
 
-        <!-- DESTAQUES: cards em Flexbox -->
-        <section id="destaques" class="destaques">
-            <h2>Destaques do dia</h2>
-            <div class="cards">
-                <article class="card">
-                    <!-- Troque a URL abaixo pelo caminho da sua foto: src="img/pao-de-mel.jpg" -->
-                    <img src="Pao-de-Mel.jpg" alt="Pão de mel artesanal coberto com chocolate">
-                    <h3>Pão de Mel Artesanal</h3>
-                    <p>Massa macia com recheio de doce de leite.</p>
-                </article>
-                <article class="card">
-                    <img src="sddefault.jpg" alt="Fatia de bolo de fubá com goiabada">
-                    <h3>Bolo de Fubá com Goiabada</h3>
-                    <p>O clássico da tarde, quentinho.</p>
-                </article>
-                <article class="card">
-                    <img src="coxinha-fácil_267.webp" alt="Coxinha de frango com catupiry">
-                    <h3>Coxinha com Catupiry</h3>
-                    <p>Crocante por fora, cremosa por dentro.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- CARDÁPIO: a tabela original, agora semântica e estilizada -->
-        <section id="cardapio" class="cardapio">
-            <h2>Cardápio completo</h2>
+        <!-- DOCES -->
+        <section class="cardapio">
+            <h2>Doces</h2>
             <table class="tabela-cardapio">
-                <caption>Nossos produtos por categoria</caption>
+                <caption>Doces artesanais</caption>
                 <thead>
                     <tr>
-                        <th scope="col">Categoria</th>
-                        <th scope="col">Exemplo 1</th>
-                        <th scope="col">Exemplo 2</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Preço</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr><td>Pão de Mel Artesanal</td><td>R$ 8,00</td></tr>
+                    <tr><td>Brigadeiro Gourmet</td><td>R$ 5,00</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- BOLOS -->
+        <section class="cardapio">
+            <h2>Bolos</h2>
+            <table class="tabela-cardapio">
+                <caption>Bolos e fatias</caption>
+                <thead>
                     <tr>
-                        <td>style="color:chocolate"><strong>Doces</strong></td>
-                        <td style="color:chocolate">Pão de Mel artesanal</td>
-                        <td style="color:
-                            chocolate">igadeiro Gourmet</td>
+                        <th scope="col">Item</th>
+                        <th scope="col">Preço</th>
                     </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Bolo de Fubá com Goiabada (fatia)</td><td>R$ 7,00</td></tr>
+                    <tr><td>Bolo de Chocolate Supremo (fatia)</td><td>R$ 9,00</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SALGADOS -->
+        <section class="cardapio">
+            <h2>Salgados</h2>
+            <table class="tabela-cardapio">
+                <caption>Salgados quentinhos</caption>
+                <thead>
                     <tr>
-                        <td><strong>Bolos</strong></td>
-                        <td>Bolo de Fubá com Goiabada</td>
-                        <td>Bolo de Chocolate Supremo</td>
+                        <th scope="col">Item</th>
+                        <th scope="col">Preço</th>
                     </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Coxinha de Frango com Catupiry</td><td>R$ 8,00</td></tr>
+                    <tr><td>Pão de Queijo Mineiro</td><td>R$ 4,00</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SOBREMESAS -->
+        <section class="cardapio">
+            <h2>Sobremesas</h2>
+            <table class="tabela-cardapio">
+                <caption>Para adoçar o dia</caption>
+                <thead>
                     <tr>
-                        <td                        <td>style="color:chocolate"><strong>Doces</strong></td>
- ststyle="color:chocolate">rong>Salgados</strong></td>
-                        <tdstyle="color:Coxinha de Frango com Catupiry</td>
-                        <td style="color:chocolate"><strong>Doces</strong></td>
-                        <td>Pão de Queijo Mineiro</td>
+                        <th scope="col">Item</th>
+                        <th scope="col">Preço</th>
                     </tr>
-                    <tr>
-                        <td style="color:chocolate"><strong>Doces</strong></td>
-                        <td <strong>Sobremesas</strong></td>
-                        <td style="color:chocolate"><strong>Doces</strong></td>
-                        <td tyle="color:chocolate"><strong>Doces</strong></td>
-                        <td style="color:chocolate"><strong>Doces</strong></td>
-                        <td Pudim de Leite Condensado</td>
-                        <td Taça da Felicidade</td>
-                        <td style="color:chocolate"><strong>Doces</strong></td>
-                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Pudim de Leite Condensado</td><td>R$ 10,00</td></tr>
+                    <tr><td>Taça da Felicidade (morango com chocolate)</td><td>R$ 12,00</td></tr>
                 </tbody>
             </table>
         </section>
 
     </main>
 
-    <!-- RODAPÉ -->
-    <footer id="contato" class="rodape">
+    <footer class="rodape">
         <p>Rua das Flores, 123 — Londrina/PR · (43) 99999-0000</p>
         <p><small>Site desenvolvido pelos alunos do CEEP Castaldi · 2026</small></p>
     </footer>
